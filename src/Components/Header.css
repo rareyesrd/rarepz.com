@@ -1,10 +1,11 @@
 .Header {
-    background-image: url(./images/rarepz-header.png);
+    background-image: url(./images/banner.png);
     background-size: cover;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 42rem;
+    height: 42rem; 
+    /* background-color: #00acff; */
     position: relative;
 }
 .content-logo{
@@ -17,11 +18,19 @@
     font-weight: bold;
     font-size: 40px;
 }
+.content-vector{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.content-vector img{
+    vertical-align: middle;
+}
 .content-description{
     position: absolute;
     top: 0;
     right: 0;
-    padding: 5rem 15%;
+    padding: 5rem 5%;
     
 }
 
@@ -41,4 +50,9 @@ display: block;
     font-size: 1rem;
     font-weight: 400;
     margin-bottom: 1rem;
+}
+@media screen and (max-width: 736px){
+    .content-vector img{
+        display: none;
+    }
 }
