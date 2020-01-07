@@ -1,27 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black&display=swap');
 .Header {
-    background-image: url(./images/banner.png);
+    /* background-image: url(./images/banner.png);
     background-size: cover;
     background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 42rem; 
-    /* background-color: #00acff; */
+    background-repeat: no-repeat; */
+    height: 39rem; 
+    background-color: #00acff;
     position: relative;
 }
 .content-logo{
     position: absolute;
     top: 0;
     left: 0;
-    padding: 3rem;
+}
+.content-logo .shadow img{
+    position: relative;
 
-    /* ==== */
-    font-weight: bold;
-    font-size: 40px;
+}
+.content-logo .shadow h2{
+   position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0.8rem -0.8rem;
+    font-size: 3.3rem;
 }
 .content-vector{
     position: absolute;
     bottom: 0;
     left: 0;
+    display: flex;
 }
 .content-vector img{
     vertical-align: middle;
@@ -30,8 +38,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    padding: 5rem 5%;
-    
+    padding: 5.2rem 2%;
 }
 
 .content-description h1{
@@ -51,8 +58,26 @@ display: block;
     font-weight: 400;
     margin-bottom: 1rem;
 }
+.content-description p a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20pt;
+    font-family: 'Archivo Black', sans-serif;
+}
+.skew-effect{
+    position: absolute;
+    bottom: -1.5rem;
+    height: 80px;
+    transform: skewY(1deg);
+    width: 100%;
+    z-index: 999;
+    background-color: #00acff;
+}
 @media screen and (max-width: 736px){
     .content-vector img{
         display: none;
+    }
+    .content-description p a{    
+        font-size: 16pt;
     }
 }
