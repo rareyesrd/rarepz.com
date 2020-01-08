@@ -32,7 +32,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 9rem;
+    padding-top: 5rem;
 }
 
 .content-description h1{
@@ -58,6 +58,24 @@ display: block;
     font-size: 18pt;
     font-family: 'Archivo Black', sans-serif;
     text-align: justify;
+}
+.wave-header{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.style-wave{
+    height: 150px;
+    overflow: hidden;
+}
+.style-wave2{
+    height: 100%; 
+    width: 100%;
+}
+.style-wave3{
+    stroke: none;
+    fill: #fff;
 }
 /* .skew-effect{
     position: absolute;
