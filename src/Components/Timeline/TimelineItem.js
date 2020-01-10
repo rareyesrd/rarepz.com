@@ -4,9 +4,9 @@ const TimelineItem = (data) =>{
     return(
     <div className="timeline-item">
         <div className="timeline-item-content">
-        {/* <span className="tag" style={{ background: data.category.color}}>
-            {data.category.tag}
-        </span> */}
+        <span className="tag" style={{ background: data.category}}>
+            {data.tag}
+        </span>
             <time>{data.date}</time>
             <p>{data.text}</p>
             {data.link && (

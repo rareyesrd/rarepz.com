@@ -6,11 +6,11 @@ class Timeline extends Component {
     render(){
     const timelineData = [
         {
-            text: 'Wrote my first blog post ever on Medium',
-            date: 'March 03 2017',
+            text: 'AP Computer Science Principles',
+            date: '2017',
             category: {
-                tag: 'medium',
-                color: '#018f69'
+                tag: 'CodeHs',
+                color: '#f3f3f3'
             },
             link: {
                 url:
@@ -49,6 +49,8 @@ class Timeline extends Component {
         <div className="timeline-container">
             {timelineData.map((data, idx) => (
                 <TimelineItem 
+                category={data.category.color}
+                tag={data.category.tag}
                 text={data.text}
                 date={data.date} 
                 link={data.link}

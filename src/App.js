@@ -8,6 +8,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <Header />
+        <h3 className="timeline-title">Something about me</h3>
         <Timeline />
       </div>
     );
