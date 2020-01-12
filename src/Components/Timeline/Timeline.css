@@ -119,6 +119,13 @@
     right: auto;
     left: -40px;
 }
+.timeline-container .backgound-timeline{
+    background-image: url(./images/vector-1.png);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
 @media only screen and (max-width: 1023px) {
     .timeline-item-content {
         max-width: 100%;

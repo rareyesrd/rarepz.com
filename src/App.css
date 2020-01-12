@@ -2,7 +2,6 @@
 .App-logo {
   height: 40vmin;
 }
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -17,7 +16,138 @@
 .App-link {
   color: #09d3ac;
 }
+/* ==== Header  ==== */
+
+/* === Timeline === */
+.Timeline{
+  /* background-color: #1c1a1f; */
+  position: relative;
+}
 .timeline-title{
   text-align: center;
   font-size: 3rem;
+  margin: 0px;
+  padding-top: 4rem;
+  /* color: #fff; */
+}
+.squares{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.Timeline .squares li{
+  position: absolute;
+  display: block;
+  list-style: none;
+  animation: animation 20s linear infinite;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.Timeline .squares li:nth-child(1){
+  width: 60px;
+  height: 60px;
+  opacity: 0.5;
+  left: 10%;
+  animation-delay: 0s;
+  animation-duration: 20s;
+  bottom: 700px;
+
+}
+.Timeline .squares li:nth-child(2){
+  width: 40px;
+  height: 40px;
+  opacity: 0.5;
+  left: 20%;
+  animation-delay: 1.9s;
+  animation-duration: 20s;
+  bottom: 500px;
+
+}
+.Timeline .squares li:nth-child(3){
+  width: 100px;
+  height: 100px;
+  opacity: 0.5;
+  left: 40%;
+  animation-delay: 1.4s;
+  animation-duration: 20s;
+  bottom: 300px;
+
+}
+.Timeline .squares li:nth-child(4){
+  width: 80px;
+  height: 80px;
+  opacity: 0.5;
+  left: 60%;
+  animation-delay: 5s;
+  animation-duration: 50s;
+  bottom: 100px;
+
+}
+.Timeline .squares li:nth-child(5){
+  width: 100px;
+  height: 100px;
+  opacity: 0.5;
+  left: 70%;
+  animation-delay: 3.5s;
+  animation-duration: 40s;
+  bottom: -100px;
+
+}
+.Timeline .squares li:nth-child(6){
+  width: 70px;
+  height: 70px;
+  opacity: 0.5;
+  left: 85%;
+  animation-delay: 3.5s;
+  animation-duration: 25s;
+  bottom: 400px;
+}
+.Timeline .squares li:nth-child(7){
+  width: 60px;
+  height: 60px;
+  opacity: 0.5;
+  left: 55%;
+  animation-delay: 3.5s;
+  animation-duration: 25s;
+  bottom: 600px;
+}
+.Timeline .squares li:nth-child(8){
+  width: 50px;
+  height: 50px;
+  opacity: 0.5;
+  left: 33%;
+  animation-delay: 3.5s;
+  animation-duration: 25s;
+  bottom: 200px;
+}
+.Timeline .squares li:nth-child(9){
+  width: 20px;
+  height: 20px;
+  opacity: 0.5;
+  left: 20%;
+  animation-delay: 3.5s;
+  animation-duration: 25s;
+  bottom: 300px;
+}
+.Timeline .squares li:nth-child(10){
+  width: 30px;
+  height: 30px;
+  opacity: 0.5;
+  left: 35%;
+  animation-delay: 3.5s;
+  animation-duration: 25s;
+  bottom: 500px;
+}
+@keyframes animation {
+  0% {
+      transform: translateY(200px) rotate(0deg);
+      opacity: 1;
+  }
+  100% {
+    transform: translateY(-1200px) rotate(360deg);
+    opacity: 0;
+
+  }
 }

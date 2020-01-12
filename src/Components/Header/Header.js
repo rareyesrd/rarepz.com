@@ -25,10 +25,10 @@ const Header = () => {
         <p><a href={email}>rafaelalexanderr5@gmail.com</a></p>
       </div>
       <div className="wave wave1"></div>
-      <div className="wave wave2"></div>
-      <div className="wave wave3"></div>
-      <div className="wave wave4"></div>
-      </div>
+      <div className="waves wave2"></div>
+      <div className="waves wave3"></div>
+      <div className="waves wave4"></div>
+    </div>
   );
 };
 
