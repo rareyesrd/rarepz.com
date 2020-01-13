@@ -1,23 +1,22 @@
 import React from "react";
 
-const TimelineItem = (data) =>{ 
+const TimelineItem = ({color, tag, date, link, txt, url, text}) =>{ 
     return(
     <div className="timeline-item">
         <div className="timeline-item-content">
-        <span className="tag" style={{ background: data.category}}>
-            {data.tag}
+        <span className="tag" style={{ background: color}}>
+            {tag}
         </span>
-            <time>{data.date}</time>
-            <p>{data.text}</p>
-            {data.link && (
-                <a
-                    href={data.link.url}
+            <time>{date}</time>
+            <p>{txt}</p>
+                {link && (<a
+                    href={url}
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    {data.link.text}
+                    {text}
                 </a>
-            )}
+                )}
             <span className="circle" />
         </div>
     </div>

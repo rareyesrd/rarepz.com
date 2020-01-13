@@ -6,7 +6,7 @@ class Timeline extends Component {
     render(){
     const timelineData = [
         {
-            text: 'AP Computer Science Principles',
+            txt: 'AP Computer Science Principles',
             date: '2017',
             category: {
                 tag: 'CodeHs',
@@ -19,7 +19,7 @@ class Timeline extends Component {
             }
         },
         {
-            text: 'Wrote my first blog post ever on Medium',
+            txt: 'Wrote my first blog post ever on Medium',
             date: 'March 03 2017',
             category: {
                 tag: 'medium',
@@ -32,7 +32,7 @@ class Timeline extends Component {
             }
         },
         {
-            text: 'Wrote my first blog post ever on Medium',
+            txt: 'Wrote my first blog post ever on Medium',
             date: 'March 03 2017',
             category: {
                 tag: 'medium',
@@ -45,7 +45,7 @@ class Timeline extends Component {
             }
         },
         {
-            text: 'Wrote my first blog post ever on Medium',
+            txt: 'Wrote my first blog post ever on Medium',
             date: 'March 03 2017',
             category: {
                 tag: 'medium',
@@ -58,7 +58,7 @@ class Timeline extends Component {
             }
         },
         {
-            text: 'Wrote my first blog post ever on Medium',
+            txt: 'Wrote my first blog post ever on Medium',
             date: 'March 03 2017',
             category: {
                 tag: 'medium',
@@ -71,7 +71,7 @@ class Timeline extends Component {
             }
         },
         {
-            text: 'Wrote my first blog post ever on Medium',
+            txt: 'Wrote my first blog post ever on Medium',
             date: 'March 03 2017',
             category: {
                 tag: 'medium',
@@ -88,11 +88,13 @@ class Timeline extends Component {
         <div className="timeline-container">
             {timelineData.map((data, idx) => (
                 <TimelineItem 
-                category={data.category.color}
+                color={data.category.color}
                 tag={data.category.tag}
-                text={data.text}
+                txt={data.txt}
                 date={data.date} 
                 link={data.link}
+                url={data.link.url}
+                text={data.link.text}
                 key={idx}
                  />
             ))}

@@ -4,7 +4,6 @@ import Header from "./Components/Header/Header";
 import Timeline from "./Components/Timeline/Timeline";
 class App extends React.Component {
   render() {
-    
     return (
       <div className="App">
         <div className="Header">
@@ -12,8 +11,8 @@ class App extends React.Component {
         </div>
         <div className="Timeline">
           <h3 className="timeline-title">We are working on this page!</h3>
-          {/* <Timeline /> */}
-          {/* <ul className="squares">
+          <Timeline />
+          <ul className="squares">
             <li></li>
             <li></li>
             <li></li>
@@ -24,7 +23,7 @@ class App extends React.Component {
             <li></li>
             <li></li>
             <li></li>
-          </ul> */}
+          </ul>
         </div>
       </div>
     );
